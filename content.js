@@ -43,10 +43,10 @@ if (video_element.id != null) {
                 console.log("muted : " + media.loop);
             } else if (event.key === 'ArrowRight') {
                 // skip
-                media.currentTime += 5;
+                media.currentTime += 10;
             } else if (event.key === 'ArrowLeft') {
                 // skip
-                media.currentTime -= 5;
+                media.currentTime -= 10;
             } else if (event.key === 'ArrowUp') {
                 // volume
                 if (media.volume + volumeRate < 1) {
