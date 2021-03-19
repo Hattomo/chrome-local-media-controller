@@ -41,12 +41,18 @@ if (video_element.id != null) {
                     media.muted = true;
                 }
                 console.log("muted : " + media.loop);
-            } else if (event.key === 'ArrowRight') {
-                // skip
+            } else if (event.key === 'j') {
+                // skip 10 seconds
                 media.currentTime += 10;
-            } else if (event.key === 'ArrowLeft') {
-                // skip
+            } else if (event.key === 'k') {
+                // skip 10 seconds
                 media.currentTime -= 10;
+            } else if (event.key === 'ArrowRight') {
+                // skip 5 seconds
+                media.currentTime += 5;
+            } else if (event.key === 'ArrowLeft') {
+                // skip 5 seconds
+                media.currentTime -= 5;
             } else if (event.key === 'ArrowUp') {
                 // volume
                 if (media.volume + volumeRate < 1) {

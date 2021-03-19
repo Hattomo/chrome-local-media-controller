@@ -11,8 +11,10 @@ You can operate media by keyboard shortcut.
 |<kbd>s</kbd>|slower|
 |<kbd>l</kbd>|loop|
 |<kbd>m</kbd>|mute|
-|<kbd>←</kbd>|back 10 seconds|
-|<kbd>→</kbd>|forward 10 seconds|
+|<kbd>j</kbd>|back 10 seconds|
+|<kbd>k</kbd>|forward 10 seconds|
+|<kbd>←</kbd>|back 5 seconds|
+|<kbd>→</kbd>|forward 5 seconds|
 |<kbd>↑</kbd>|volume up|
 |<kbd>↓</kbd>|volume down|
 |<kbd>i</kbd>|show info|
