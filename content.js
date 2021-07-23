@@ -9,7 +9,7 @@ if (video_element.id != null) {
         event => {
             playbackRate = 0.1;
             volumeRate = 0.05;
-            if (event.key === 'f') {
+            if (event.key === '>') {
                 // fast 
                 if (media.playbackRate + playbackRate < 16) {
                     media.playbackRate += 0.1
@@ -17,7 +17,7 @@ if (video_element.id != null) {
                     media.playbackRate = 16
                 }
                 console.log("fast : " + media.playbackRate);
-            } else if (event.key === 's') {
+            } else if (event.key === '<') {
                 // slow
                 if (0.1 < media.playbackRate - playbackRate) {
                     media.playbackRate -= 0.1;
