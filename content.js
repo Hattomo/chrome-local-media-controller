@@ -25,7 +25,7 @@ if (video_element.id != null) {
                     media.playbackRate = 0.1;
                 }
                 console.log("slow : " + media.playbackRate);
-            } else if (event.key === 'l') {
+            } else if (event.key === 'e') {
                 // loop
                 if (media.loop) {
                     media.loop = false;
@@ -41,10 +41,17 @@ if (video_element.id != null) {
                     media.muted = true;
                 }
                 console.log("muted : " + media.loop);
-            } else if (event.key === 'j') {
+            } else if (event.key === 'k') {
+                // play and pause (as same as space)
+                if (media.paused) {
+                    media.play();
+                } else {
+                    media.pause();
+                }
+            } else if (event.key === 'l') {
                 // skip 10 seconds
                 media.currentTime += 10;
-            } else if (event.key === 'k') {
+            } else if (event.key === 'j') {
                 // skip 10 seconds
                 media.currentTime -= 10;
             } else if (event.key === 'ArrowRight') {
