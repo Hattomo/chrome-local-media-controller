@@ -54,6 +54,12 @@ if (video_element.id != null) {
             } else if (event.key === 'j') {
                 // skip 10 seconds
                 media.currentTime -= 10;
+            } else if (event.key === 'L') {
+                // skip 10 seconds
+                media.currentTime += 60;
+            } else if (event.key === 'J') {
+                // skip 10 seconds
+                media.currentTime -= 60;
             } else if (event.key === 'ArrowRight') {
                 // skip 5 seconds
                 media.currentTime += 5;
@@ -78,6 +84,45 @@ if (video_element.id != null) {
             } else if (event.key === 'i') {
                 msg = "Playback Speed " + media.playbackRate + "x\nLoop : " + media.loop;
                 alert(msg);
+                // state   
+            } else if (event.key === '0') {
+                media.currentTime = 0;
+            } else if (event.key === '1') {
+                media.currentTime = (media.duration * 0.1);
+            } else if (event.key === '2') {
+                media.currentTime = (media.duration * 0.2);
+            } else if (event.key === '3') {
+                media.currentTime = (media.duration * 0.3);
+            } else if (event.key === '4') {
+                media.currentTime = (media.duration * 0.4);
+            } else if (event.key === '5') {
+                media.currentTime = (media.duration * 0.5);
+            } else if (event.key === '6') {
+                media.currentTime = (media.duration * 0.6);
+            } else if (event.key === '7') {
+                media.currentTime = (media.duration * 0.7);
+            } else if (event.key === '8') {
+                media.currentTime = (media.duration * 0.8);
+            } else if (event.key === '9') {
+                media.currentTime = (media.duration * 0.9);
+            } else if (event.code === 'Digit1' && event.shiftKey) {
+                media.playbackRate = 0.25;
+            } else if (event.code === 'Digit2' && event.shiftKey) {
+                media.playbackRate = 0.5;
+            } else if (event.code === 'Digit3' && event.shiftKey) {
+                media.playbackRate = 0.75;
+            } else if (event.code === 'Digit4' && event.shiftKey) {
+                media.playbackRate = 1;
+            } else if (event.code === 'Digit5' && event.shiftKey) {
+                media.playbackRate = 1.25;
+            } else if (event.code === 'Digit6' && event.shiftKey) {
+                media.playbackRate = 1.5;
+            } else if (event.code === 'Digit7' && event.shiftKey) {
+                media.playbackRate = 1.75;
+            } else if (event.code === 'Digit8' && event.shiftKey) {
+                media.playbackRate = 2;
+            } else if (event.code === 'Digit9' && event.shiftKey) {
+                media.playbackRate = 2.25;
             }
         });
 }
